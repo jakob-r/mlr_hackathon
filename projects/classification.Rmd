@@ -1,0 +1,29 @@
+---
+title: "Classification"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(mlr)
+```
+
+## Introduction
+
+Provide a thoughtful and insightful analysis of a classification problem.
+First get familiar with the data.
+
+```{r data}
+data = 
+head(data)
+```
+
+## Insightfull Analysis
+
+In this chapter you are supposed to give an insight to the data.
+What are the characterisitcs of each class and which factors contribute mainly to the classification
+
+## Predictive Analysis
+
+In this chapter the goal is to find the best performing model.
+Optimize the Accuracy `acc` using tuning methods or benchmarking functions of mlr.

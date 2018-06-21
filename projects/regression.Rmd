@@ -1,0 +1,29 @@
+---
+title: "Regression"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(mlr)
+```
+
+## Introduction
+
+Provide a thoughtful and insightful analysis of a regression problem.
+First get familiar with the data.
+
+```{r data}
+data = getTaskData(bh.task)
+head(data)
+```
+
+## Insightfull Analysis
+
+In this chapter you are supposed to give an insight to the data.
+Which factors contribute mainly to the median value of the owner-occupied homes (`medv`).
+
+## Predictive Analysis
+
+In this chapter the goal is to find the best performing model.
+Optimize the `rmse` using tuning methods or benchmarking functions of mlr.

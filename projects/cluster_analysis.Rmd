@@ -1,0 +1,26 @@
+---
+title: "Cluster Analysis"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(mlr)
+```
+
+## Introduction
+
+Provide a thoughtful and insightful analysis of a cluster problem.
+First get familiar with the data.
+
+```{r data}
+# https://archive.ics.uci.edu/ml/datasets/Absenteeism+at+work
+data = getTaskData(agri.task)
+head(data)
+```
+
+## Insightfull Analysis
+
+In this chapter you are supposed to give an insight to the data.
+What are characeristics of each cluster?
+Is the clustering stable?
