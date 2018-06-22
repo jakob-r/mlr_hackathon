@@ -1,5 +1,5 @@
 ---
-title: "Imbalanced Classification"
+title: "Classification Multiclass"
 output: html_document
 ---
 
@@ -14,7 +14,6 @@ Provide a thoughtful and insightful analysis of a classification problem.
 First get familiar with the data.
 
 ```{r data}
-# https://www.kaggle.com/mlg-ulb/creditcardfraud ?
 data = 
 head(data)
 ```
@@ -28,4 +27,4 @@ A good benchmark is to compare your model to a featureless learner to indicate h
 ## Predictive Analysis
 
 In this chapter the goal is to find the best performing model.
-Optimize the F1-measure `f1` using tuning methods or benchmarking functions of mlr.
+Optimize the Accuracy `acc` using tuning methods or benchmarking functions of mlr.
