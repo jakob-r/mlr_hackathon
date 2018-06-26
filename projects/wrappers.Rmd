@@ -1,0 +1,35 @@
+---
+title: "Advanced - Wrappers"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(mlr)
+```
+
+## Introduction
+
+Can you think of any analysis steps, such as parts of preprocessing that involve setting additional
+parameters, which (optimally) can be tuned?
+As an example look at preprocessing wrappers, such as `makePreprocWrapperCaret` and 
+`makeImputeWrapper()`
+
+Provide a guide on how to create and tune such (custom) wrappers and apply it to a suitable problem.
+
+## Creating a wrapper
+
+Show how to create the wrapper.
+```{r}
+wrp = makePreprocWrapper(...)
+```
+
+
+## Applying the wrapper
+
+Showcase how the wrapper works in a simple example.
+
+
+## Tuning the learner and the wrapper.
+
+Showcase how wrappers and learners can be tuned jointly in a simple example.
