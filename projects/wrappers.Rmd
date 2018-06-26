@@ -15,11 +15,16 @@ parameters, which (optimally) can be tuned?
 As an example look at preprocessing wrappers, such as `makePreprocWrapperCaret` and 
 `makeImputeWrapper()`
 
+Some examples:
+* Feature hashing
+* Binning numeric features
+* Smoothing functional observations
+
 Provide a guide on how to create and tune such (custom) wrappers and apply it to a suitable problem.
 
 ## Creating a wrapper
 
-Show how to create the wrapper.
+Show how to create the wrapper and explain the neccessary steps.
 ```{r}
 wrp = makePreprocWrapper(...)
 ```
