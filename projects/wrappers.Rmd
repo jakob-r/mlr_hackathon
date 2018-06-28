@@ -21,6 +21,10 @@ Some examples:
 * Smoothing functional observations
 
 Provide a guide on how to create and tune such (custom) wrappers and apply it to a suitable problem.
+Some ideas for application datasets:
+https://archive.ics.uci.edu/ml/datasets/semeion+handwritten+digit
+https://archive.ics.uci.edu/ml/datasets/Amazon+Commerce+reviews+set
+Kaggle: Deaths in the United States
 
 ## Creating a wrapper
 
