@@ -1,0 +1,45 @@
+---
+title: "Imbalanced Classification"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE, 
+  cache = TRUE
+)
+library(mlr)
+```
+
+## Introduction
+
+Provide a thoughtful and insightful analysis of the machine learning problem you chose.
+This includes providing an understanding of the features a proper validation of the model that gives an reliable estimate of the prediction performance.
+
+## Reading the dataset
+
+Read the dataset. You might want to downsample it for a faster analysis and only later use the full dataset.
+
+```{r}
+# just an example
+library(data.table)
+data = fread("...")
+```
+
+## Exploration
+
+Get in touch with the features of the dataset.
+
+* Does the data have missing values? 
+* Categorical features?
+* Features that need preprocessing?
+
+In this chapter you are also supposed to give an insight to the data.
+
+## Benchmark
+
+Benchmark different learners or tune the hyperparemeters to obtain a good predictive performance.
+
+## Interpret Results
+
+Can you use the obtained model to get deeper insights about the relationship bettween the features and the label?
