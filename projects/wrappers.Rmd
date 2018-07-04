@@ -1,0 +1,44 @@
+---
+title: "Advanced - Wrappers"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(mlr)
+```
+
+## Introduction
+
+Can you think of any analysis steps, such as parts of preprocessing that involve setting additional
+parameters, which (optimally) can be tuned?
+As an example look at preprocessing wrappers, such as `makePreprocWrapperCaret` and 
+`makeImputeWrapper()`
+
+Some examples:
+* Feature hashing
+* Binning numeric features
+* Smoothing functional observations
+
+Provide a guide on how to create and tune such (custom) wrappers and apply it to a suitable problem.
+Some ideas for application datasets:
+https://archive.ics.uci.edu/ml/datasets/semeion+handwritten+digit
+https://archive.ics.uci.edu/ml/datasets/Amazon+Commerce+reviews+set
+Kaggle: Deaths in the United States
+
+## Creating a wrapper
+
+Show how to create the wrapper and explain the neccessary steps.
+```{r}
+wrp = makePreprocWrapper(...)
+```
+
+
+## Applying the wrapper
+
+Showcase how the wrapper works in a simple example.
+
+
+## Tuning the learner and the wrapper.
+
+Showcase how wrappers and learners can be tuned jointly in a simple example.
