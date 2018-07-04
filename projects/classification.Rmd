@@ -14,8 +14,26 @@ Provide a thoughtful and insightful analysis of a classification problem.
 First get familiar with the data.
 
 ```{r data}
-data = 
-head(data)
+library(nycflights13)
+library(dplyr)
+
+# Predicting whether a flight is delayed from weather data.
+
+# Join the weather data to destination and origin
+flights_weather = flights %>%
+  inner_join(weather) %>%
+  select(-time_hour)
+# Relevant features:
+flights_weather %>%
+  select(one_of(c("hour", "origin", "dest", "dep_delay", 
+    "temp", "dewp", "humid", "wind_dir",
+    "wind_speed", "wind_gust", "precip", "pressure",
+    "visib"))) %>% 
+      mutate(is_delayed = dep_delay > 5) %>%
+  select(-dep_delay)
+
+# Carefully select features you want to use! 
+
 ```
 
 ## Insightfull Analysis
