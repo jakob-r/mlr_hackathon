@@ -14,6 +14,7 @@ Provide a thoughtful and insightful analysis of a classification problem.
 First get familiar with the data.
 
 ```{r data}
+# Example dataset you can work on:
 library(nycflights13)
 library(dplyr)
 
